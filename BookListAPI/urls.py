@@ -5,4 +5,5 @@ urlpatterns = [
     # path('books/', views.books) 
     # use class based view
     path('books/', views.BookList.as_view()),
+    path('books/<int:pk>', views.Book.as_view()),
 ]
